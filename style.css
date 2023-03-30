@@ -1,0 +1,607 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+.portada{
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(rgba(4, 6, 31, 0.674),rgba(4, 6, 31, 0.674)), url(img/ladrillo\ sílico\ calcáreo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+   display: flex;
+     
+ }
+ header{
+   height: 15vh;
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+ }
+ .logo img{
+    width: 180px;
+ }
+ #menu-icon{
+    font-size: 35px;
+    color: rgb(14, 0, 108);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+ }
+ .textbox{
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 35PX;
+    padding-bottom: 15PX;
+}
+.textbox p{
+    font-size: 18PX;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: rgb(234, 182, 13);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    animation: growing 1.5s infinite;
+}
+.btn{
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(14, 0, 108);
+    padding: 15px 20px;
+}
+.btn i{
+    margin-right: 5px;
+}
+@keyframes growing{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+
+}
+
+.btn-col{
+   
+    text-decoration: none;
+   
+    color: transparent;
+}
+ .navbar_container img{
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 150px;
+ }
+
+ .navbar li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+ }
+ .navbar_link{
+     color: #111111;
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     
+     transition: all .50s ease;
+ }
+ .navbar_item .navbar_link::after{
+ 
+     content: "";
+     width: 0;
+     height: 3px;
+     background-color: rgb(14, 0, 108);
+     margin: auto;
+     display: block;
+ }
+ 
+ .navbar_item .navbar_link:hover::after{
+     width: 100%;
+     transition: width 0.3s linear;
+ }
+
+.navbar_container .fa{
+    display: none;
+}
+.container-servicios{
+    min-height: 100vh;
+    background: #ffffff;
+    align-items: center;
+    padding-block: 80px;
+}
+.servicios{
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+.subtitulo{
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: 800;
+    color: rgb(14, 0, 108);
+}
+.servicios p{
+    color: #6a6a6a;
+}
+.row{
+
+    width: 100%;
+    padding-block: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.col{
+    
+    flex-basis: 32%;
+    overflow: hidden;
+
+}
+.col img{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+
+}
+
+
+
+.texto{
+height: 30%;
+width: 80%;
+align-items: center;
+margin: auto;
+
+}
+
+.texto h3{
+    color: #0e0e0e;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.texto p{
+    color: #0e0e0e;
+
+}
+
+
+/*
+.layer:hover p{
+    bottom: 42%;
+    opacity: 1;
+    color: #fff;
+}
+*/
+.clientes{
+    min-height: 100vh;
+    padding: 40px 0px;
+    text-align: center;
+    background: #e5e8ed;
+    display: flex;
+    align-items: center;
+   
+}
+
+.container-clientes{
+    
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+.box{
+    display: flex;
+    flex-basis: 23%;
+    align-items: center;
+    width: 200px;
+    overflow: hidden;
+    background: rgb(219, 219, 219);
+    box-shadow: 0px 0px 10px 8px rgba(135, 150, 190, 0.2);
+}
+.box img{
+    width: 80%;
+    padding: 28px 18px;
+}
+.col-a{
+    
+    flex-basis: 50%;
+    
+    min-height: 45vh;
+    
+    background-image:linear-gradient(rgba(4, 7, 39, 0.667),rgba(4, 7, 39, 0.667)), url(img/instalación\ Muros\ de\ tabiquería.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.col-b{
+    
+    padding: 80px;
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(14, 0, 108);
+    color: #fff;
+}
+
+.container-beneficios{
+    min-height: 40vh;
+    background-color: aqua;
+}
+.container-beneficios h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.beneficios .row{
+
+    padding: 0;
+}
+
+
+.row-be{
+    
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.listaBe{
+    padding-bottom: 30px;
+    list-style: none;
+}
+.con-b .listaBe li i{
+    color: rgb(14, 0, 108);
+    padding-right: 15px;
+}
+.listaBe li {
+    list-style: none;
+    color: #6a6a6a;
+    font-size: 19px;
+    
+    list-style-position: inside;
+    line-height: 40px;
+}
+.contactenos{
+    min-height: 80vh;
+    
+
+}
+.nosotros .con-a{
+    flex-basis: 40%;
+    padding: 40px;
+    margin-left: 80px;
+}
+.contactenos .con-a{
+    flex-basis: 45%;
+    padding: 40px;
+    margin-left: 80px;
+}
+.contactenos .con-b{
+    flex-basis: 45%;
+    padding: 40px;
+    margin-left: 80px;
+}
+.con-a img{
+    width: 100%;
+}
+.con-a h3{
+    font-size: 34px;
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: rgb(14, 0, 108);
+
+}
+.con-a h4{
+    font-size: 17px;
+    padding-bottom: 15px;
+    font-weight: 300;
+    color:#6a6a6a;
+
+}
+.container-clientes .con-b{
+    flex-basis:45%;
+}
+.container-clientes .con-a{
+    flex-basis: 45%;
+}
+.nosotros .con-b{
+    flex-basis: 60%;
+    
+    padding: 40px 60px;
+}
+.subtitulo{
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 800;
+    color: rgb(14, 0, 108);
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+.input-group label{
+    text-align: left;
+}
+.input-cbx{
+    margin-bottom: 10px;
+}
+select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+.container-footer{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(14, 0, 108);
+
+}
+.button{
+    background: rgb(14, 0, 108);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contact-left h3{
+    color: rgb(14, 0, 108);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+footer{
+    width: 100%;
+    background-image:linear-gradient(rgba(234, 234, 234, 0.714),rgba(234, 234, 234, 0.714)), url(img/construccion\ ladrillo\ silico\ calcareo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+}
+.container-footer ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 33%;
+    
+}
+.footer-col h4{
+   color: #232323;
+   font-size: 18px;
+}
+.footer-col li{
+   color: #232323;
+}
+.footer-col p{
+    color: #232323;
+ }
+.footer-col i{
+    padding-right: 10px;
+    color:  rgb(234, 182, 13);
+}
+@media(max-width: 700px){
+   
+    #menu-icon{
+        margin-left: 15px;
+        display: block;
+    }
+    header{
+        align-items: center;
+        height: 10vh;
+        padding: 0px 16px;
+        transition: .2s;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .navbar_link{
+        color: #e4e0e0;
+        font-size: 15px;
+        display: block;
+        margin: 5px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar_link:hover{
+        color: rgb(4, 117, 255);
+        transform: translateY(5px);
+    }
+    .navbar_link.active{
+
+        color: rgb(4, 117, 255);
+    }
+    .navbar.open{
+        right: 2%;
+    }
+    
+   .navbar{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 270px;
+    height: 25vh;
+    background-color:  rgb(14, 0, 108);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+   }
+   .texto h3{
+    color: #0e0e0e;
+    font-size: 18px;
+    font-weight: 600;
+    }
+    .portada{
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(4, 6, 31, 0.674),rgba(4, 6, 31, 0.674)), url(img/ladrillo\ sílico\ calcáreo.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .container-clientes{
+        text-align: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+     
+    }
+    .container-servicios{
+        min-height: 100vh;
+    }
+    .navbar_container .fa{
+        display: inline-block;
+        color: rgb(14, 0, 108);
+        font-size: 22px;
+        cursor: pointer;
+        align-items: center;
+        margin: 10px;
+    }
+    .textbox h1{
+        font-size: 24px;
+    }
+    .subtitulo{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .hero-btn{
+        font-size: 15px;
+    }
+    .contactenos .row{
+        flex-direction: column;
+        
+    }
+    .container-clientes .row{
+        flex-direction: column;
+        
+    }
+    .nosotros .row{
+        flex-direction: column-reverse;
+        
+    }
+    .servicios .row{
+        flex-direction: column-reverse;
+        
+    }
+    .row-be{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+   .row-footer{
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+   }
+   .footer-col{
+    
+    margin-top: 10px;
+    overflow: hidden;
+   }
+    .col{
+        margin-top: 10px;
+        overflow: hidden;
+        min-height: 30vh;
+       
+    }
+    .container-beneficios .col-b{
+        padding: 80px 60px;
+        min-height: 60vh;
+    }
+    .container-beneficios .col-a{
+       
+        min-height: 40vh;
+    }
+    .container-beneficios .col-b h3{
+        font-size: 25px;
+    }
+    .container-beneficios .col-b .listaBe li{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .layer{
+        overflow: hidden;
+        box-sizing:border-box
+    }
+    .container-clientes .box{
+        
+        margin: 15px auto;
+        width: 150px;
+    }
+    .container-clientes .box img{
+        width: 80%;
+        padding: 28px 18px;
+    }
+    .listaBe li{
+        font-size: 17px;
+    }
+}
