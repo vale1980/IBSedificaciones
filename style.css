@@ -359,7 +359,7 @@ margin: auto;
     flex-basis:45%;
 }
 .container-clientes .con-a{
-    flex-basis: 45%;
+    flex-basis: 30%;
 }
 .nosotros .con-b{
     flex-basis: 60%;
@@ -707,5 +707,6 @@ footer{
 
     
 }
+
 
 
